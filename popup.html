@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const masuk = confirm("anda yakin masuk?");
+
+        if(masuk){
+            const fix = confirm("yakin banget mau masuk??");
+            if (fix){
+                const nama = prompt("siapa nama anda?");
+                const nilai = prompt("Berapa nilaimu?");
+                 if (nilai >= 91) {
+                    alert(`Hai ${nama} nilai kamu sangat kompeten`);
+                } else if(nilai >= 81) {
+                    alert(`Hai ${nama} nilai kamu kompeten`);
+                } else if (nilai >= 61) {
+                   alert(`Hai ${nama} nilai kamu cukup kompeten`);
+                } else {
+                    alert(`Hai ${nama} nilai kamu kurang kompeten`);
+                }
+            } else {
+                alert("Bye Bye")
+            }
+        } else {
+            alert("Bye bye")
+        }
+    </script>
+</body>
+</html>
